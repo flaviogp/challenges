@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;600;800&family=Saira+Condensed:wght@200;400;600&display=swap');
+
+/* font-family: 'Asap', sans-serif;
+font-family: 'Saira Condensed', sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-light: #fdfdfd;
+    --color-dark: #27474e;
+    --color-mid: #496970;
+    --color-primary: #f3344a;
+    --color-primary-glare: #f4d7da;
+    --color-secondary: #678c94;
+    --color-secondary-glare: #ebf0f1;
+    --shadow: 0px 0px 40px rgba(39, 71, 78, 0.1);
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    display: grid;
+    place-items: center;
+}
+
+.container{
+    height: 100%;
+}
+
+.progressbar{
+    counter-reset: step;
+    list-style: none;
+}
+
+.progressbar li{
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    position: relative;
+}
+
+.progressbar li spam{
+    font-family: 'Saira Condensed', sans-serif;
+    text-transform: uppercase;   
+}
+
+.progressbar li h2{
+    font-family: 'Asap', sans-serif;
+    font-weight: bold;
+}
+
+.progressbar li:before{
+    content: counter(step);
+    counter-increment: step;
+    position: absolute;
+    left: -4rem;
+    margin-top: 1.5rem;
+    border: 1px solid #000;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    line-height: 1.8rem;
+    background-color: var(--color-light);
+}
+
+.progressbar li:after{
+    content: '';
+    height: 100%;
+    width: 2px;
+    background-color: var(--color-dark);
+    position: absolute;
+    left: -3rem;
+    top: -60%;
+    z-index: -1;
+}
+.progressbar li:first-child:after{
+    content: none;
+}
+
+.progressbar li.active:before{
+    border-color: var(--color-primary);
+    background-color: var(--color-primary);
+    color: var(--color-light)
+}
+
+.progressbar li.active + li:after{
+    background-color: var(--color-primary);
+}

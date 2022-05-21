@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+:root {
+    --color-day-bg: #0984e3;
+    --color-day-icon: #ffe4a1;
+    --color-night-bg: #032b43;
+    --color-night-icon: #b9c6d3;
+    --color-light: #ffffff;
+    --color-dark: #4a4a4a;
+    --color-shadow-light: rgba(48, 48, 48, 0.15);
+    --color-shadow-mid: rgba(0, 0, 0, 0.25);
+    --color-shadow-dark: rgba(0, 0, 0, 0.9);
+}
+  
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+body{ 
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  transition: .4s;
+}
+
+.container{
+  display: flex;
+  align-items: center;
+}
+
+.container span{
+  font-size: 3rem;
+  margin-right: 2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+
+input[type="checkbox"]{
+  display:inline-block;
+  position: relative;
+  appearance: none;
+  cursor: pointer;
+  min-width: 10rem;
+  height: 5rem;
+  border-radius: 50px;
+  background-color: var(--color-day-bg);
+  background-image: url("/assets/images/sun-fill.svg");
+  background-repeat: no-repeat;
+  background-position: 6rem;
+}
+
+input:checked[type="checkbox"]{
+  background-color: var(--color-night-bg);
+  background-image: url("/assets/images/moon-fill.svg");
+  background-repeat: no-repeat;
+  background-position: 0.5rem;
+}
+
+input[type="checkbox"]:before{
+  content: '';
+  width: 4rem;
+  height: 4rem;
+  position:absolute;
+  box-shadow: 0 0 1.6rem var(--color-shadow-light);
+  top: 0.5rem;
+  left: 0.5rem;
+  border-radius: 50px;
+  background-color: var(--color-light);
+}
+
+
+
+input:checked[type="checkbox"]:before{
+  right: 0.5rem;
+  left: auto;
+  box-shadow: 0 0 1.6rem var(--color-shadow-dark);
+}
+
+

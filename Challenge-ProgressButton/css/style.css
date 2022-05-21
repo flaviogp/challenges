@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+:root {
+    --color-primary: #21223e;
+    --color-primary-light: #3c3f73;
+    --color-success: #0c8d87;
+    --color-error: #c01332;
+    --color-light: #ffffff;
+}
+
+body{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+main{
+    position: relative;
+}
+
+.btn-submit, .success, .error{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 14rem;
+    padding: 1rem;
+    color: var(--color-light);
+    background-color: var(--color-primary);
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 2.5rem;
+}
+
+.btn-submit svg, .success svg, .error svg{
+    fill: currentColor;
+    height: 1.5rem;
+}
+.btn-submit span, .btn-submit svg{
+    position: relative;
+}
+.btn-submit::before{
+    content: ' ';
+    position: absolute;
+    width: 0;
+    height: 100%;
+    background-color: var(--color-primary-light);
+    border-radius: 0.5rem;
+    top: 0;
+    left: 0;
+    transition: width 2s ease;
+}
+.btn-submit:focus::before{
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.success-msg, .error-msg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    
+}
+.success-msg{
+    background-color: var(--color-success);
+}
+
+.error-msg{
+    background-color: var(--color-error);
+}
+
+.btn-submit:focus + .error, .btn-submit:focus + .success{
+    transition-delay: 2s;
+    z-index: 5;
+}
+

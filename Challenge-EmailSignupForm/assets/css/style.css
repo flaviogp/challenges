@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'Inter';
+  font-style:  normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url("./Inter-Black.woff2") format("woff2"),
+       url("./Inter-Black.woff") format("woff");
+}
+
+:root {
+    --color-primary: #4c2982;
+    --color-secondary: #f9d170;
+    --color-bg: #f9f7f3;
+    --color-text: #252525;
+    --color-light: #f3f3f3;
+    --color-success: #067973;
+    --color-success-bg: #f5fffe;
+    --color-error: #b71540;
+    --color-error-bg: #fdeff3;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Inter';
+}
+
+  .container{
+    max-width: 32rem;
+    margin: 13rem  auto;
+    color: var(--color-primary);
+
+  }
+
+  .container .sign-up{
+    font-size: 3.2em;
+    margin-bottom: 1em;
+    line-height: 1.1em;
+  }
+
+  .container p{
+    font-size: 1.6em;
+    margin-bottom: 0.5em;
+  }
+
+  .form .input-email{
+    width: 27rem;
+    height: 4.3rem;
+    font-size: 1.6em;
+    padding: 1rem;
+    border: none;
+    margin: 0.05rem;
+    color: var(--color-text);
+    font-weight: 600;
+  }
+
+  .input-email:focus, .form .submit-email:focus{
+    outline: 0.05em solid var(--color-primary);
+    z-index: 1;
+  }
+
+  .form{
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.2);
+  }
+  .form .submit-email{
+    background-color: var(--color-secondary);
+    border: none;
+    
+  }
+  .form .submit-email img{
+    width: 5rem;
+    height: 4rem;
+    fill: var(--color-primary);
+    padding: 0.9rem 0.7rem 0.7rem;
+  }
+
+/* TAGS CRIADAS NO SCRIPT */
+
+  .error, .success{
+    display: grid;
+    width: 32rem;
+    margin-top: 1.5rem;
+    grid-template-columns: repeat (2, auto);
+    grid-template-rows: repeat (2, auto);
+    grid-template-areas: 'img title' 'img text';
+    padding: 1.5rem;
+  }
+  .error{
+  border: 1px solid var(--color-error);
+  color: var(--color-error);
+  background-color: var(--color-error-bg);
+  }
+  .success{
+    border: 1px solid var(--color-success);
+    color: var(--color-success);
+    background-color: var(--color-success-bg);
+  }
+
+  .img-error, .img-success{
+    grid-area: img;
+    background-size: 2.5rem;
+    background-repeat: no-repeat;
+  }
+  .img-error{
+    background-image: url(../images/alert-triangle.svg);
+  }
+  .img-success{
+    background-image: url(../images/check.svg);
+  }
+
+  .title-error, .title-success{
+    grid-area: title;
+    font-size: 2em;
+  }
+
+
+  .text-error , .text-success{
+    grid-area: text
+  }

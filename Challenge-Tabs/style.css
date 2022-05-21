@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+:root {
+    --color-light: #f3f3f3;
+    --color-mid: #dedede;
+    --color-dark: #313e4f;
+    --color-slate: #444444;
+    --color-inactive: #4f637d;
+    --color-primary: #2a7bd6;
+  }
+
+html{
+    font-family: 'Josefin Sans', sans-serif;
+    letter-spacing: -0.03em;
+    background-color: var(--color-light);
+
+}
+
+body{
+height: 100vh;
+width: 100vw;
+display: flex;
+justify-content: center;
+padding-top: 100px;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    width: 60rem;
+    height: max-content;
+    flex-direction: column;
+    padding: 2rem;
+}
+
+.nav-tabs {
+    width: 100%;
+    
+}
+
+.nav-tabs ul{
+    position: relative;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 1rem;
+    
+}
+
+.nav-tabs label{
+    font-size: 2.1rem;
+    padding: 1rem;
+    color: var(--color-inactive);
+    font-weight: bold;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.nav-tabs .input-tabs{
+    display: none;
+    
+}
+
+.nav-tabs .content{
+    width: 40rem;
+    position: absolute;
+    display: none;
+    left: 0;
+    font-size: 3rem;
+    font-weight: 400;
+    color: var(--color-slate);
+    padding: 3rem 0 0 1rem;
+}
+
+.content h2{
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.content p{
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+}
+
+.input-tabs:checked ~ .content{
+    display: block;
+}
+
+.input-tabs:checked ~ label{
+    border-bottom: 2px solid var(--color-primary);
+    color: var(--color-dark)
+}
