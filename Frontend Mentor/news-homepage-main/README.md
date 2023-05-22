@@ -1,0 +1,1 @@
+- Clique [aqui](https://flaviogp.github.io/challenges/Frontend%20Mentor/news-homepage-main/) para visualisar o projeto
