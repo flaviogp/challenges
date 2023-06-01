@@ -1,0 +1,1 @@
+Clique [aqui](https://flaviogp.github.io/challenges/frontend-mentor/results-summary-component-main/) para visualizar o projeto
