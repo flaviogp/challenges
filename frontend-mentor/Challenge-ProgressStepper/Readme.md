@@ -4,4 +4,4 @@ Logo voltarei e o farei completo!
 
 - Url do desafio: https://piccalil.li/blog/challenge-008-progress-stepper/
 
-- Clique [AQUI](https://flaviogp.github.io/frontend-challenges/Challenge-ProgressStepper/) para ver a minha solução.
+- Clique [AQUI](https://flaviogp.github.io/challenges/frontend-mentor/Challenge-ProgressStepper/) para ver a minha solução.

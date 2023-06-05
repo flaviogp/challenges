@@ -6,4 +6,4 @@ Nesse desafio utilizei JS para validar o email, que nesse caso eu fiz uso de uma
 
 - Url do desafio: https://piccalil.li/blog/challenge-001-email-sign-up-form/.
 
-- Clique [AQUI](https://flaviogp.github.io/frontend-challenges/Challenge-EmailSignupForm/) para ver a minha solução.
+- Clique [AQUI](https://flaviogp.github.io/challenges/frontend-mentor/Challenge-EmailSignupForm/) para ver a minha solução.

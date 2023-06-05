@@ -6,4 +6,4 @@ Fiz uso de grid css para alinhamento dos elementos e media query para a responsi
 
 - Url do desafio: https://piccalil.li/blog/challenge-006-auto-scrolling-responsive-grid/
 
-- Clique [AQUI](https://flaviogp.github.io/frontend-challenges/Challenge-Auto-scrolling-responsive%20grid/) para ver a minha solução.
+- Clique [AQUI](https://flaviogp.github.io/challenges/frontend-mentor/Challenge-Auto-scrolling-responsive%20grid/) para ver a minha solução.
