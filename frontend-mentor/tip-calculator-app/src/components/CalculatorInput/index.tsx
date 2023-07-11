@@ -22,7 +22,7 @@ export function CalculatorInput(props: Props): JSX.Element {
     return(
         <div className="input-container">
             <p>{props.fieldName}</p>
-            <label htmlFor="input-calculator">
+            <label htmlFor={props.inputName}>
                 {
                     props.icon === 'dollar' ?
                         <FaDollarSign className="dollar-icon" />
