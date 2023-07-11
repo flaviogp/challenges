@@ -1,0 +1,22 @@
+/* // result-info info calculate */
+
+.result-info{
+    display: flex;
+    width: 100%;
+    margin-bottom: 25px;
+    justify-content: space-between;
+}
+
+.result-info .info h3{
+    font-size: .7rem;
+    color: var(--white);
+}
+.result-info .info p{
+    font-size: .5rem;
+    color: var(--grayish-cyan);
+}
+
+.result-info p{
+    font-size: 1.2rem;
+    color: var(--grayish-cyan);
+}

@@ -1,0 +1,67 @@
+.select-tip{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+
+}
+.input-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 'r1c1 r1c2 r1c3' 'r2c1 r2c2 r2c3';
+    gap: 10px;
+}
+.input-content input[type=number]::placeholder{
+    font-size: 20px;
+    text-align: center; 
+}
+.input-content input[type=number]:focus::placeholder{
+    color: transparent
+}
+
+
+.select-tip p{
+    font-size: 15px;
+    margin-bottom: 10px;
+    color: var(--strong-cyan);
+}
+
+.input-content #five-percent{
+    grid-area: r1c1;
+}
+.input-content #ten-percent{
+    grid-area: r1c2;
+}
+.input-content #fifteen-percent{
+    grid-area: r1c3;
+}
+.input-content #twenty-percent{
+    grid-area: r2c1;
+}
+.input-content #twenty-five-percent{
+    grid-area: r2c2;
+}
+.input-content input[type=number]{
+    grid-area: r2c3;
+    max-width: 100px;
+}
+
+@media(max-width: 850px){
+    .input-content{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 'r1c1 r1c2' 'r2c1 r2c2' 'r1c3 r2c3';
+    }
+}
+
+@media(max-width: 640px){
+    .input-content{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 'r1c1 r1c2 r1c3' 'r2c1 r2c2 r2c3';
+    }
+}
+
+@media(max-width: 430px){
+    .input-content{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-areas: 'r1c1 r1c2' 'r2c1 r2c2' 'r1c3 r2c3';
+    }
+}

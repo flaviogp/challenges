@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root{
+  --strong-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --dark-grayish-cyan: hsl(186, 14%, 43%);
+  --grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+}
+
+html {
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+}
+
+body {
+  display: grid;
+  place-items: center;
+  background-color: var(--light-grayish-cyan);
+}
+
+input[type=number] { 
+  -moz-appearance: textfield;
+  appearance: textfield;
+  border: none;
+  font-family: 'Space Mono', monospace;
+  font-size: 24px;
+  text-align: right;
+  cursor: pointer;
+  padding-right: 10px;
+  color: var(--very-dark-cyan);
+  background-color: var(--very-light-grayish-cyan);
+  border-radius: 5px;
+}
+input[type=number]:focus {
+  background-color: var(--light-grayish-cyan);
+  outline: 2px solid var(--strong-cyan);
+
+}
+
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+/* 
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px 
+*/
+

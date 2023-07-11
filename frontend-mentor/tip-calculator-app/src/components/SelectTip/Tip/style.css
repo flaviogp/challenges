@@ -1,0 +1,29 @@
+.tip {
+    display: flex;
+    background-color: var(--very-dark-cyan);
+    max-width: 100px;
+    border-radius: 5px;
+    position: relative;
+
+}
+
+.active{
+    background-color: var(--grayish-cyan) !important;
+}
+
+.tip label{
+    width: 100%;
+    cursor: pointer;
+    text-align: center;
+    color: var(--white);
+    font-size: 15px;
+    padding: 10px 30px;
+}
+
+.tip input[type=radio]{
+    visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
