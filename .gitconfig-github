@@ -1,0 +1,8 @@
+# .gitconfig-github
+
+[user]
+	name = FlavioGP
+	email = flavio.gpinheiro@hotmail.com
+[safe]
+	directory = D:\Development\code\FlavioGP
+	directory = D:\Development\code\FlavioGP\challenges

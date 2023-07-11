@@ -31,7 +31,7 @@ export function CalculatorInput(props: Props): JSX.Element {
                 }
                 <input type="number" 
                     name={props.inputName} 
-                    id="input-calculator" 
+                    id={props.inputName} 
                     placeholder="0" 
                     onChange={e => handleChange(e.target)}/>
             </label>
