@@ -24,6 +24,110 @@ html {
 body {
     width: 100vw;
     height: 100vh;
-    background: linear-gradient(to bottom, var(--pale-blue), var(--very-pale-blue));
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-size: auto;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
 }
+
+p{
+    color: var(--desaturated-blue);
+    font-weight: 500;
+}
+
+h1, h2, h3{
+    color: var(--dark-blue);
+    font-weight: 900;
+}
+
+.order-sumary {
+    max-width: 375px;
+    background-color: #fff;
+    border-radius: 15px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 10px 10px rgba(0,0,0,0.5);
+}
+.order-sumary .image{
+    width: 100%;
+    border-radius: 5px;
+}
+.order-sumary .image img{
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+
+}
+.order-sumary .infomation{
+    width: 100%;
+    text-align: center;
+    padding: 30px 20px;
+    line-height: 25px;
+}
+.order-sumary .infomation h1{
+    color: var(--dark-blue);
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
+
+.order-sumary .plan{
+    width: 90%;
+    background-color: var(--very-pale-blue);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.order-sumary .plan img{
+    color: var(--dark-blue);
+}
+.order-sumary .plan .info-plan{
+    margin-left: -25%;
+}
+.order-sumary .plan .info-plan h3{
+    font-size: 1rem;
+}
+.order-sumary .plan a{
+    font-weight: 700;
+    color: var(--bright-blue);
+    text-decoration: underline;
+}
+.order-sumary .plan a:hover{
+    filter: brightness(2.5);
+    text-decoration: none;
+}
+
+.order-sumary button[type="submit"]{
+    width: 90%;
+    padding: 15px;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--bright-blue);
+    color: var(--very-pale-blue);
+    font-weight: 700;
+    font-size: 1rem;
+    margin: 25px;
+    cursor: pointer;
+}
+
+.order-sumary button[type="submit"]:hover{
+    background-color: hsl(245, 75%, 65%);
+}
+
+.order-sumary .cancel-order{
+    color: var(--desaturated-blue);
+    font-weight: 700;
+    text-decoration: none;
+    margin-bottom: 25px;
+}
+.order-sumary .cancel-order:hover{
+    color: var(--dark-blue)
+}
+
+
 
