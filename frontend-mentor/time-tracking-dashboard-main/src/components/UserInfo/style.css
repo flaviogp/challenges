@@ -1,0 +1,67 @@
+.user-info{
+    border-radius: 15px;
+    background-color: var(--dark-blue);
+    width: 25%;
+}
+
+.user-info .info{
+    background-color: var(--blue);
+    border-radius: 15px;
+    padding: 30px;
+}
+.user-info .info .photo {
+    margin-bottom: 30px;
+}
+.user-info .info .photo img{
+    width: 100px;
+    border: 3px solid #fff;
+    border-radius: 50%;
+}
+
+.user-info .info .user-name span,
+.user-info .info .user-name h1 {
+    color: #fff;
+    font-weight: 300;
+}
+
+.user-info .info .user-name{
+    margin-bottom: 30px;
+}
+
+.user-info .period{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.user-info .period p{
+    color: var(--desaturated-blue);
+    transition: .4s;
+}
+.user-info .period p:hover{
+    color: #fff;
+    cursor: pointer
+}
+
+
+
+@media (max-width: 750px) {
+    .user-info{
+        width: 100%;
+    }
+    .user-info .info{
+       display: flex;
+       align-items: center;
+    }
+    .user-info .info .photo {
+        margin: 0 20px 0 0;
+    } 
+
+    .user-info .info .user-name{
+        margin-bottom: 0;
+    }
+    .user-info .period{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}
