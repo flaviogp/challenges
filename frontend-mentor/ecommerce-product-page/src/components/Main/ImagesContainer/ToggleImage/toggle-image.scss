@@ -1,0 +1,28 @@
+.toggle-image{
+    position: absolute;
+    top: 50% - 10%;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    visibility: hidden;
+   
+    &:hover{
+      svg{
+         path{
+            stroke: variables.$orange;
+         }
+      }
+    }
+
+}
+
+#previous-image{
+   left: 10px;
+}
+#next-image{
+   right: 10px;
+}

@@ -1,0 +1,21 @@
+@use './variables';
+@import './mixin';
+
+@import '../app.scss';
+
+@import '../components/Header/header.scss';
+
+
+@import '../components/Main/ImagesContainer/images.scss';
+@import '../components/Main/ImagesContainer/ToggleImage/toggle-image.scss';
+
+@import '../components/Main/ProductInfo/product-info.scss';
+@import '../components/Main/main-component.scss';
+
+@import '../components/ShoppingCart/shopping-cart.scss';
+
+@import '../components/ErrorMessage/error-message.scss';
+
+@import '../components/LightBoxImage/light-box.scss';
+
+@import './media';
