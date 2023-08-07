@@ -1,14 +1,14 @@
 .home {
     @include pegeTemplate(url(../assets/home/background-home-desktop.jpg));
-    display: flex;
     align-items: center;
-    justify-content: center;
     color: #fff;
 
     .home-content{
-        width: 90%;
+    
+        width: 100%;
         display: flex;
         justify-content: space-around;
+        padding: 30px;
         align-items: end;
     
         .brief{

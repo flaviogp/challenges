@@ -5,6 +5,7 @@ import { Destination } from './components/Destination'
 import { Technology } from './components/Technology'
 import { Crew } from './components/Crew'
 
+import data from './data/data'
 
 function App() {
 
@@ -12,8 +13,8 @@ function App() {
     <>
       <Header />
       <Home />
+      <Destination data={data.destinations}/>
       <Crew />
-      <Destination/>
       <Technology/>
     </>
   )

@@ -15,4 +15,8 @@
 .DS_Store
 .prettierignore
 
+<<<<<<< HEAD
 node_modules
+=======
+node_modules
+>>>>>>> 46ea36d8a114a8c73c46034925cdb64ea9c8cad9
