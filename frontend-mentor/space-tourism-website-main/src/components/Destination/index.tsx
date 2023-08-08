@@ -12,14 +12,7 @@ export const Destination = ({data}: Iprops) =>{
     useEffect(()=>{
         const obj = data.find(obj => obj.name === destination);
         if(!obj) return;
-        setDestinationData({
-            name: obj.name,
-            image: obj.image,
-            description: obj.description,
-            distance: obj.distance,
-            travel: obj.travel
-        })
-
+        setDestinationData({...obj});
     }, [destination, data])
 
     return(
