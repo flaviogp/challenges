@@ -15,6 +15,7 @@ export interface ICrew {
 export interface ITechnology {
     name: string;
     description: string;
+    image: string;
 }
 
 export interface IData {
