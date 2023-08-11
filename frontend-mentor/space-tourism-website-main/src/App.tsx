@@ -1,8 +1,8 @@
-import { Crew } from './components/Crew';
-import { Destination } from './components/Destination';
+import { Crew } from './components/pages/Crew';
+import { Destination } from './components/pages/Destination';
 import { Header } from './components/Header';
-import { Home } from './components/Home';
-import { Technology } from './components/Technology';
+import { Home } from './components/pages/Home';
+import { Technology } from './components/pages/Technology';
 import data from './data/data';
 
 export function App() {

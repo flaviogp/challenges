@@ -1,4 +1,4 @@
-@mixin pegeTemplate($backgroundUrl){
+@mixin pageTemplate($backgroundUrl){
     display: flex;
     width: 100%;
     height: 100vh;
@@ -7,6 +7,34 @@
     background-size: cover;
     padding: 0 30px;
     padding-top: 50px;
-    align-items: end;
     justify-content: center;
+}
+
+@mixin pageContainer($w, $h){
+    width: $w;
+    height: $h;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    
+    @media (max-width: 990px){
+        width: 100%;
+        padding: 0;
+    }
+    @media (max-width: 831px){
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-around;
+    }
+}
+
+@mixin pageDescription($h: initial){
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: start;
+    text-transform: uppercase;
+    width: 50%;
+    height: $h;
 }
