@@ -1,0 +1,250 @@
+@media (max-width: 830px) {
+    .header {
+        padding: 0;
+
+        .nav-container {
+            width: 90%;
+            display: flex;
+            justify-content: end;
+            overflow-x: visible;
+            position: relative;
+            .hamburguer-menu {
+                display: block;
+            }
+
+        }
+
+        .nav-bar {
+            width: 0;
+            filter: brightness(1);
+            backdrop-filter: blur(0);
+
+            transition: width .4s;
+            &::after {
+                content: none;
+            }
+
+            ul {
+                display: none;
+            }
+        }
+
+        .menu-active {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            padding: 100px 0;
+            width: 50%;
+            position: relative;
+            text-transform: uppercase;
+            filter: brightness(1.2);
+            backdrop-filter: blur(20px);
+
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                // gap: 30px;
+                justify-content: space-between;
+                height: 60%;
+                color: #fff;
+
+                li {
+                    display: flex;
+                    align-items: center;
+
+                    &:hover {
+                        cursor: pointer;
+                        border-bottom: 2px solid #fff;
+                    }
+                }
+            }
+
+
+        }
+    }
+    // Home
+
+    .home {
+        
+        .home-container{
+            .home-description{
+                align-items: center;
+                text-align: center;
+
+                p{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+    
+    
+    // Destination
+
+    .destination {    
+    
+        &-container{
+            
+            .destination-descripition-container{
+                .destination-descripition{
+                    text-align: center;
+                    p{
+                        text-align: center;
+                    }
+                }
+
+                .info-navigation{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center ;
+                    gap: 30px;
+                    text-align: center;
+                    div{
+                        span{
+                            font-size: 2rem;
+                        }
+                        p{
+                            font-size: 2.5rem;
+                        }
+                    }
+                }
+
+            }
+    
+            .destination-image{
+                height: 50%;
+                width: 80%;
+        
+                p{
+                    width: 100%;
+                    text-align: center;
+                    margin-bottom: 50px;
+                    font-size: 1.3rem;
+                    &::before{
+                        content: '01';
+                        padding-right: 10px;
+                        color: #777676
+                    }
+                }
+                img{
+                    width: 250px;
+                }
+            }
+        }
+    }
+
+    // Crew 
+
+    .crew-container{
+        flex-direction: column-reverse;
+        .crew-description{
+            margin-top: 50px;
+            height: initial;
+            span{
+                text-align: left;
+                font-size: 1.3rem;
+                
+                &:before{
+                    content: '02';
+                    padding-right: 10px;
+                    color: #777676
+                }
+            }
+    
+            .crew-info{
+                margin: 50px 0;
+            }
+        }
+        .crew-image-container{
+            width: 100%;
+            justify-content: center;
+        }
+    }
+
+    // Technology
+
+    .technology {
+        padding-right: 20px;
+        padding-top: 0;
+    }
+    
+    
+    .technology-container{
+        flex-direction: column-reverse;
+        .technology-description{
+            @include pageDescription($h: 450px);
+    
+            
+            span{
+                text-align: left;
+                font-size: 1.3rem;
+                &:before{
+                    content: '03';
+                    padding-right: 10px;
+                    color: #777676
+                }
+            }
+    
+            .technology-info{
+                display: flex;
+                flex-direction: column-reverse;
+                align-items: center;
+                width: 100%;
+                margin-top: 100px;
+                gap: 2rem;
+    
+                .info-content{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    .technology-name{
+                        font-size: 2.5rem;
+                        margin-bottom: 20px;
+                    }
+                    .technology-info-description{
+                        text-transform: none;
+                        max-width: 400px;
+                    }
+                }
+    
+                .carousel{
+                    height: initial;
+                    width: 200px;
+                    flex-direction: row;
+                    li{
+                        width: 50px;
+                        height: 50px;
+                        border: 1px solid #fff;
+                        border-radius: 50%;
+        
+                        display:flex;
+                        justify-content: center;
+                        align-items: center;
+                        color: #fff;
+                        font-weight: 700;
+                        &::after{
+                            content: attr(id);
+                            font-size: 1.2rem;
+                        }
+                    }
+                    .active-carousel{
+                        background-color: #fff;
+                        color: #000;
+                    }
+                }
+            }
+        
+        }
+    
+        .technology-image-container{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            img{
+                width: 100%;
+                height: 20rem;
+            }
+        }
+    }
+}

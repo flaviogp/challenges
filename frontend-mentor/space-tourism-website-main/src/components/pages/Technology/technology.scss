@@ -1,0 +1,83 @@
+.technology {
+    @include pageTemplate(url(../assets/technology/background-technology-desktop.jpg));
+    padding-right: 0;
+}
+
+
+.technology-container{
+    @include pageContainer(100%, 100%);
+    padding-left: 120px;
+    
+    .technology-description{
+        @include pageDescription($h: 450px);
+
+        
+        span{
+            text-align: left;
+            font-size: 1.3rem;
+            &:before{
+                content: '03';
+                padding-right: 10px;
+                color: #777676
+            }
+        }
+
+        .technology-info{
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 100px;
+            gap: 2rem;
+
+            .info-content{
+                .technology-name{
+                    font-size: 2.5rem;
+                    margin-bottom: 20px;
+                }
+                .technology-info-description{
+                    text-transform: none;
+                    max-width: 400px;
+                }
+            }
+
+            .carousel{
+                display: flex;
+                justify-content: space-between;
+                height: 200px;
+                flex-direction: column;
+                li{
+                    width: 50px;
+                    height: 50px;
+                    border: 1px solid #fff;
+                    border-radius: 50%;
+    
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    color: #fff;
+                    font-weight: 700;
+                    &::after{
+                        content: attr(id);
+                        font-size: 1.2rem;
+                    }
+                }
+                .active-carousel{
+                    background-color: #fff;
+                    color: #000;
+                }
+            }
+        }
+    
+    }
+
+    .technology-image-container{
+        width: 50%;
+        display: flex;
+        justify-content: right;
+        img{
+            height: 400px;
+            width: 400px;
+        }
+    }
+}

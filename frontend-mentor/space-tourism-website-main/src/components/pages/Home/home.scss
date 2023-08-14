@@ -1,0 +1,46 @@
+.home {
+    @include pageTemplate(url(../assets/home/background-home-desktop.jpg));
+    align-items: end;
+    
+    .home-container{
+        @include pageContainer(80%, 80%);
+    
+        .home-description{
+            @include pageDescription();
+            span, h1{
+                text-transform: uppercase;
+            }
+            span{
+                font-size: 1.5rem;
+            }
+            h1{
+                font-size: 8rem;
+                margin: 20px 0;
+            }
+            p{
+                max-width: 400px;
+                line-height: 25px;
+                text-transform: initial;
+            }
+        }
+
+        .explore{
+            width: 200px;
+            height: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            background-color: #fff;
+            color: #000;
+            border-radius: 50%;
+            transition: all .6s;
+            &:hover{
+                cursor: pointer;
+                background-color: #000;
+                color: #fff;
+            }
+        }
+    }
+}
+

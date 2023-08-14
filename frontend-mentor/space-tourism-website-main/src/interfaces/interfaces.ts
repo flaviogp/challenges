@@ -16,6 +16,7 @@ export interface ITechnology {
     name: string;
     description: string;
     image: string;
+    imageMobile: string;
 }
 
 export interface IData {

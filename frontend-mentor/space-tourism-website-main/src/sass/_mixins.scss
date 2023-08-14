@@ -5,7 +5,7 @@
     background-image: $backgroundUrl;
     background-position: center;
     background-size: cover;
-    padding: 0 30px;
+    padding: 20px 30px;
     padding-top: 50px;
     justify-content: center;
 }
@@ -37,4 +37,10 @@
     text-transform: uppercase;
     width: 50%;
     height: $h;
+
+    @media (max-width: 831px){
+        width: 100%;
+        align-items: center ;
+        text-align: center;
+    }
 }
