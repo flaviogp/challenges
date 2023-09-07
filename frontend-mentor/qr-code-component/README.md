@@ -6,14 +6,14 @@
 
   <h2 align="center">E-commerce product page</h2>
   <p align="center">
-    <a href="https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6"><strong>Frontend Mentor Challenge</strong></a>
+    <a href="https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H"><strong>Frontend Mentor Challenge</strong></a>
     <br />
     <br />
-    <a href="https://stupendous-praline-f35dee.netlify.app/">View Demo</a>
+    <a href="https://flaviogp.github.io/challenges/frontend-mentor/qr-code-component/">View Demo</a>
     ·
-    <a href="https://github.com/flaviogp/e-commerce-product-page/issues" target="_blank">Report Bug</a>
+    <a href="https://github.com/flaviogp/challenges/issues" target="_blank">Report Bug</a>
     ·
-    <a href="https://github.com/flaviogp/e-commerce-product-page/issues" target="_blank">Request Feature</a>
+    <a href="https://github.com/flaviogp/challenges/issues" target="_blank">Request Feature</a>
   </p>
 </div>
 
@@ -38,12 +38,12 @@
 
 </div>
 
-This is a solution to the [E-commerce product page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
+This is a solution to the [QR Code Component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 <h2 align="center">Links</h2>
 
-- Solution URL: [E-commerce product page(ReactJs/TypeScript) | Frontend Mentor](https://www.frontendmentor.io/solutions/ecommerce-product-page-using-react-sass-and-typescript-FDgYbjk2s2)
-- Live Site URL: [ Click here ](https://stupendous-praline-f35dee.netlify.app/)
+- Solution URL: [QR Code Component (HTML, CSS) | Frontend Mentor](https://www.frontendmentor.io/solutions/qr-code-component-using-html-and-css-2Dx_N4bEO1)
+- Live Site URL: [ Click here ](https://flaviogp.github.io/challenges/frontend-mentor/qr-code-component/)
 
 <br>
 
@@ -54,20 +54,14 @@ This is a solution to the [E-commerce product page challenge on Frontend Mentor]
 - [My process](#my-process)
   - [Built with](#built-with)
 - [Author](#author)
-- [Acknowledgments](#acknowledgments)
 
 ## Overview
 
 ### The challenge
 
-Your users should be able to:
+-Your challenge is to build out this QR code component and get it looking as close to the design as possible.
 
-- View the optimal layout for the site depending on their device's screen size
-- See hover states for all interactive elements on the page
-- Open a lightbox gallery by clicking on the large product image
-- Switch the large product image by clicking on the small thumbnail images
-- Add items to the cart
-- View the cart and remove items from it
+-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
 
 ## My process
 
@@ -75,30 +69,13 @@ Your users should be able to:
 
 <!-- Bagdes -->
 
-![](https://img.shields.io/badge/reactjs-23272F?style=for-the-badge&logo=react&logoColor=149ECA)
+![](https://img.shields.io/badge/html-23272F?style=for-the-badge&logo=html5&logoColor=ffa500)
+![](https://img.shields.io/badge/css-23272F?style=for-the-badge&logo=css3&logoColor=00a8ff)
 
-- React
-- SASS
-- Semantic HTML5 markup
-- TypeScript
+- HTML
+- CSS
 
-### Useful resources
-
-- [React](https://react.dev/learn)
-- [SASS](https://sass-lang.com/guide/)
-- [TypeScript](https://www.typescriptlang.org/docs/)
 
 ## Author
 
 - Frontend Mentor - [@flaviogp](https://www.frontendmentor.io/profile/flaviogp)
-
-## Acknowledgments
-
-### Run the project
-
-To run the client, you need to run the following command:
-
-```bash
-npm install
-npm run dev
-```
