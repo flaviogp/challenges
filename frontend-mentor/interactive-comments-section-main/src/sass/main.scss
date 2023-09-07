@@ -1,0 +1,7 @@
+@use 'variables';
+
+@import './App.scss';
+@import '../components/Main/component-main.scss';
+@import '../components/ChatContainer/chat-container.scss';
+@import '../components/ChatFooter/chat-footer.scss';
+@import '../components/Message/message.scss';

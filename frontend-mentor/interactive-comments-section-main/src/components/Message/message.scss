@@ -1,0 +1,113 @@
+.message {
+    width: 100%;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: var(--white);
+    margin-top: 20px;
+
+
+    header{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+
+        img{
+            width: 35px;
+        }
+
+        p{
+            font-weight: 700;
+            color: var(--dark-blue)
+        }
+        span {
+            color: var(--grayish-Blue);
+        }
+    }
+    
+    .message-content{
+        margin: 20px 0;
+        color: var(--grayish-Blue);
+    }
+
+    footer{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+        label{
+            border-radius: 15px;
+            width: 100px;
+            height: 45px;
+            background-color: var(--light-gray);
+            display: flex;
+            justify-content: space-around;
+            
+            span{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 30%;
+                height: 100%;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+            }
+            
+            input[type=number] { 
+                -moz-appearance: textfield;
+                appearance: textfield;
+                max-width: 50%;
+                background-color: transparent;
+                border: none;
+                text-align: center;
+                color: var(--moderate-blue);
+                font-size: 1.1rem;
+                font-weight: 700;
+                padding: 10px 5px;
+            }
+            input[type=number]::-webkit-inner-spin-button { 
+                -webkit-appearance: none;
+                
+            }
+        }
+
+        .reply{
+            cursor: pointer;            
+            color: var(--moderate-blue);
+            font-size: 1.1rem;
+            font-weight: 500;
+            img{
+                margin-right: 5px;
+            }
+        }
+
+        .control-message{
+            display: flex;
+            gap: 20px;
+            
+            span{
+                font-weight: 700;
+                img{
+                    margin-right: 5px;
+                }
+                cursor: pointer;
+            }
+
+            .delete-message{
+                color: var(--soft-Red);
+            }
+            .edit-message{
+                color: var(--moderate-blue);
+            }
+        }
+    }
+
+}
+
+.replie {
+    width: 100%;
+    // margin-bottom: 20px;
+    margin-top: 20px;
+
+}

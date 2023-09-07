@@ -1,0 +1,59 @@
+.chat-footer{
+        width: 100%;
+        height: max-content;
+        right: 20px;
+        background-color: var(--white);
+        border-radius: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+    label{
+        width: 100%;
+        height: 100px;
+        position: relative;
+        margin-bottom: 20px;
+    
+        &:after{
+            content: 'Add a comment...';
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            font-weight: 500;
+            color: var(--grayish-Blue)
+        }
+        &:focus-within:after{
+            display: none;
+        }
+
+        input[type=text]{
+            width: 100%;
+            height: 100%;
+            padding: 20px;
+            border-radius: 15px;
+            border: 1px solid var(--grayish-Blue);
+        }
+    }
+
+    .image-user{
+        img{
+            width: 35px;
+        }
+        cursor: pointer
+    }
+
+    button[type=submit]{
+        padding: 5px 35px;
+        background-color: var(--moderate-blue);
+        color: #fff;
+        font-weight: 700;
+        font-size: 1rem;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer
+    }
+}
+
+.chat-reply{
+    margin-top: 20px;
+}
