@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+html{
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+
+:root{
+    --light-cyan: hsl(193, 38%, 86%);
+    --neon-green: hsl(150, 100%, 66%);
+    --grayish-blue: hsl(217, 19%, 38%);
+    --dark-grayish-blue: hsl(217, 19%, 24%);
+    --dark-blue: hsl(218, 23%, 16%);
+}
+
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: var(--dark-blue);
+    padding: 20px;
+}
+
+main{
+
+    background-color: var(--dark-grayish-blue);
+    width: 400px;
+    height: 400px;
+    border-radius: 25px;
+    padding: 40px 20px;
+    position: relative;
+}
+
+.slip-container{
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90%;
+    position: relative;
+    padding: 10px 0;
+}
+.slip-container:after{
+    content: url(./images/pattern-divider-mobile.svg);
+    position: absolute;
+    bottom: 0;
+}
+
+.slip-container .slip-id{
+    color: var(--neon-green);
+    position: absolute;
+    top: 0;
+    left: calc(50% - 77px); /* w: 154px */
+}
+.slip-container .slip-id::before{
+    content: 'ADVICE #';
+    word-spacing: 10px;
+    letter-spacing: 5px;
+}
+
+.slip-container .slip-advice{
+    color: var(--light-cyan);
+    /* margin-top: 30px; */
+    font-size: 1.8rem;
+}
+
+
+.toggle-advice{
+    padding: 20px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--neon-green);
+    /* width: 50px;
+    height: 50px; */
+    position: absolute;
+    bottom: -32px;
+    right: calc(50% - 32px);
+}
+
+.toggle-advice:hover{
+    cursor: pointer;
+    transform: rotate(180deg);
+    transition: all .5s;
+}
+
+
+
+
+
+
+
+
+
+/* Animação de loading */
+
+.spinner{
+    width: 30px;
+    height: 30px;
+    border: 3px solid #ccc;
+    border-top-color: #535353;
+    border-radius: 50%;
+
+
+    display: none
+}
+
+@keyframes loading {
+    0% {
+        transform: rotate(0);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.spinner.is-animating {
+    animation: loading 2s linear infinite;
+}
