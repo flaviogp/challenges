@@ -1,0 +1,21 @@
+
+.text-content {
+    width: 100%;
+    text-align: left;
+    line-height: 25px;
+
+    h2{
+        color: $white;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+
+    p{
+        color: $light-grey;
+        font-weight: 400;
+    }
+}
+
+.thanks-text{
+    text-align: center !important;
+}

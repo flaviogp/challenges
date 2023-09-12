@@ -1,0 +1,11 @@
+.result{
+    width: max-content;
+    padding: 10px;
+    background-color: $dark-blue;
+    filter: brightness(1.2);
+    border-radius: 20px;
+    color: $orange;
+    margin: 20px 0;
+    display: flex;
+    align-self: center;
+}
