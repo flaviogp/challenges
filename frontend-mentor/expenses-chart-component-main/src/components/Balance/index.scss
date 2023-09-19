@@ -1,0 +1,35 @@
+header{
+    background-color: $soft-red;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .balance-info{
+        color: #fff;
+        p{
+            font-size: 1rem;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+    }
+
+    .icon{
+        display: flex;
+        .circle-white, .circle-black{
+            height: 3rem;
+            width: 3rem;
+            border-radius: 50%;
+        }
+        .circle-white{
+            z-index: 1;
+            border: 1px solid #fff ;
+        }
+        .circle-black{
+            margin-left: -20px;
+            border: 1px solid $dark-brown;
+            background-color: $dark-brown;
+        }
+    }
+}
