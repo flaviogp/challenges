@@ -1,0 +1,28 @@
+.cards-container{
+    width: 80%;
+    min-width: 300px;
+    min-height: 250px;
+    margin-bottom: -80px;
+    display: flex;
+    flex-direction: column-reverse;
+    .card-front{
+        background-image: url(../assets/images/bg-card-front.png);
+        width: 85%;
+        height: 70%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 1;
+        align-self: start;
+    }
+    .card-back{
+        background-image: url(../assets/images/bg-card-back.png);
+        width: 85%;
+        height: 70%;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-bottom: -90px;
+        align-self: end;
+    }
+}
