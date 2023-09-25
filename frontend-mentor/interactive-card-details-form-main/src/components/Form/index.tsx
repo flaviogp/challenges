@@ -1,6 +1,17 @@
+import { useState } from "react";
 
+export interface FormData{
+    cardName: string;
+    cardNumber: string;
+    expDate: {
+        month: string;
+        year: string;
+    }
+    cvc: string
+}
 
 export default function Form () {
+    const [formData, setFormData] = useState()
     return(
         <form action="#" className="form">
             <label htmlFor="name">

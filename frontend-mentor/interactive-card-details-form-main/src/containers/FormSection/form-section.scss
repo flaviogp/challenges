@@ -5,6 +5,7 @@
     .form{
         width: 90%;
         max-width: 400px;
+        max-height: 400px;
         gap: 20px;
         padding: 20px;
         display: grid;
@@ -18,13 +19,7 @@
 
         p{
             color: $very-dark-violet;
-            
-            @media screen and (max-width: 363px ) {
-                font-size: .8rem;
-            }
-            @media screen and (max-width: 301px ) {
-                font-size: .6rem;
-            }
+
         }
 
         label{
