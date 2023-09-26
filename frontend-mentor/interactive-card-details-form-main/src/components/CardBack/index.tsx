@@ -1,7 +1,9 @@
-export default function CardBack () {
+import { CardProps } from "../../interfaces";
+
+export default function CardBack ({ formData }: CardProps) {
     return (
         <div className="card-back">
-            <p className="cvv">000</p>
+            <p className="cvc">{formData.cvc}</p>
         </div>
     )
 }
