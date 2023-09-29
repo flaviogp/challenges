@@ -6,10 +6,7 @@ function jumpingOnClouds(c, k) {
     let i = 0;
     let energy = 100;
     do {
-        if (c[i] == 1) {
-            energy -= 2;
-        }
-
+        if (c[i] == 1) energy -= 2;
         i = (i + k) % c.length;
         energy--;
     } while (i !== 0);
