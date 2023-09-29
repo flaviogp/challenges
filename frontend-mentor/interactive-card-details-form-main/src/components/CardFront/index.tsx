@@ -13,10 +13,10 @@ export default function CardFront ({ formData }: CardProps) {
 
             <div className="card-info">
                 {/* <p className="card-number">{formData.cardNumber}</p> */}
-                <p className="card-number">{formattedNumber}</p>
-                <p className="card-name">{formData.cardName}</p>
+                <p className="card-number">{formData.cardNumber ? formattedNumber : '000 000 000 0000'}</p>
+                <p className="card-name">{formData.cardName ? formData.cardName : 'Jane Appleseed'}</p>
                 {/* <p className="card-date">{formData.expDate.month} / {formData.expDate.year}</p> */}
-                <p className="card-date">{fomattedMonth} / {fomattedYear}</p>
+                <p className="card-date">{formData.expDate.month ? fomattedMonth : '00'} / {formData.expDate.year ? fomattedYear : '00'}</p>
             </div>
         </div>
     )

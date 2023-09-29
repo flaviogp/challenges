@@ -84,7 +84,7 @@
             width: 100%;
 
         }
-        button[type=submit]{
+        button{
             grid-area: form-button;
 
             padding: 15px;
@@ -95,19 +95,12 @@
             background-color: $very-dark-violet;
             border: none;
             border-radius: 10px;
+
+            &:hover{
+                cursor:pointer
+            }
         }
 
-
-
-        input[type=number]::-webkit-inner-spin-button { 
-            -webkit-appearance: none;
-            
-        }
-        input[type=number] { 
-           -moz-appearance: textfield;
-           appearance: textfield;
-        
-        }
     }
 }
 

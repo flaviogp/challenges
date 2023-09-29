@@ -5,7 +5,7 @@ export default function CardBack ({ formData }: CardProps) {
     return (
         <div className="card-back">
             {/* <p className="cvc">{formData.cvc}</p> */}
-            <p className="cvc">{fomattedCvc}</p>
+            <p className="cvc">{formData.cvc ? fomattedCvc : '123'}</p>
         </div>
     )
 }

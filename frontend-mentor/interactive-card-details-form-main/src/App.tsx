@@ -5,13 +5,13 @@ import { FormData } from "./interfaces"
 
 function App() {
   const [formData, setFormData] = useState<FormData>({
-    cardName: 'Jane Applesses',
-    cardNumber: '0000000000000000',
+    cardName: '',
+    cardNumber: '',
     expDate: {
-        month: '00',
-        year: '00'
+        month: '',
+        year: ''
     },
-    cvc: '000',
+    cvc: '',
 })
   return (
     <div className="app">
